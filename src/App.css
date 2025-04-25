@@ -1,0 +1,432 @@
+
+/*lOGIN*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  height: 365px;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: -20px;
+  margin-left: -10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.input-group .icon {
+  margin-right: 8px;
+
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #43a047;
+}
+
+.footer {
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* Dashboard Styles */
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 23%;
+  margin-bottom: 20px;
+}
+
+.header-logo {
+  height: 85px;
+  width: auto;
+}
+
+/* Edit Button Styles */
+.action-button {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-icon {
+  color: #2e7d32; /* a calm green color */
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.action-button:hover .edit-icon {
+  transform: scale(1.1);
+  color: #1b5e20; /* darker green on hover */
+}
+
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.airport-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.airport-selector h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.airport-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-box-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.filter-icon {
+  color: #555;
+  width: 18px;
+  height: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+/*PREVIEW*/
+
+.preview-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.preview-button:hover {
+  background-color: #1b5e20;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.flight-table th, .flight-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.flight-table th {
+  background-color: #2e7d32;
+  color: white;
+  font-weight: 600;
+}
+
+.flight-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.flight-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.status-departed {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.status-recover {
+  color: #ff8f00;
+  font-weight: bold;
+}
+
+.no-data {
+  text-align: center;
+  color: #757575;
+  padding: 20px;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #2e7d32;
+}
+/* Modal Styles edit popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #2e7d32;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.status-select {
+  text-transform: capitalize;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Base Stylesc  & preview $$$ */
+.preview-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #2e7d32;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.airline-logo {
+  height: 100px;
+  width: auto;
+  margin-top: -5px;
+  margin-right: 610px;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-section h1 {
+  color: grey;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  margin-top: -px;
+}
+
+.time-display {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #555;
+  font-size: 1.1rem;
+}
+.status {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* Text color only */
+.status.departed {
+  color: green; /* red */
+}
+
+.status.check-in {
+  color: green; /* green */
+}
+
+.status.landed {
+  color: yellow; /* blue */
+}
+
+.status.cancelled {
+  color: red; /* gray */
+}
+
+.status.on-time {
+  color: #2e7d32; /* dark green */
+}
+
+.status.boarding {
+  color: green; /* amber */
+}
+
+.status.delayed {
+  color: red; /* orange */
+}
+
+.status.default {
+  color: #444; /* fallback color */
+}
