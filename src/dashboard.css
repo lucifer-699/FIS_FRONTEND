@@ -1,0 +1,474 @@
+/* Dashboard Styles */
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 17%;
+  margin-bottom: 20px;
+}
+
+
+.header-logo {
+  height: 100px;
+  width: auto;
+  margin-top: -30px;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 4%;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.logout-button .logout-icon {
+  margin-right: 8px;
+}
+
+.logout-button:hover {
+  background-color: #ff7875;
+}
+
+/* Edit Button Styles */
+.action-button {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-icon {
+  color: #2e7d32; /* a calm green color */
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.action-button:hover .edit-icon {
+  transform: scale(1.1);
+  color: #1b5e20; /* darker green on hover */
+}
+
+.alert-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.airport-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.airport-selector h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.airport-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-box-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.filter-icon {
+  color: #555;
+  width: 18px;
+  height: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+/*PREVIEW*/
+
+.preview-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.preview-button:hover {
+  background-color: #1b5e20;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.flight-table th, .flight-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.flight-table th {
+  background-color: #2e7d32;
+  color: white;
+  font-weight: 600;
+}
+
+.flight-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.flight-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.status-departed {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.status-recover {
+  color: #ff8f00;
+  font-weight: bold;
+}
+
+.no-data {
+  text-align: center;
+  color: #757575;
+  padding: 20px;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #2e7d32;
+}
+/* Modal Styles edit popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #2e7d32;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.status-select {
+  text-transform: capitalize;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Modal Styles edit popup */
+.modal-content {
+background-color: white;
+padding: 25px;
+border-radius: 8px;
+width: 400px;
+max-width: 90%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remarks-with-checkbox {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.remarks-with-checkbox input[type="checkbox"] {
+width: 15px;
+height: 15px;
+margin-left: 85px;
+margin-top: -22px;
+}
+
+
+
+.form-group input[type="text"] {
+width: 100%;
+padding: 8px 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+.form-group select {
+width: 100%;
+padding: 8px 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+
+/* Style for the airport dropdown */
+.airport-selector {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.airport-name {
+font-size: 16px;
+font-weight: bold;
+color: #333;
+}
+
+.arrival{
+margin-top: 70px;
+margin-left: -73%;
+}
+.airport-dropdown {
+background-color: #f8f9fa;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 8px 12px;
+font-size: 14px;
+color: #555;
+cursor: pointer;
+transition: border-color 0.3s ease;
+margin-top: 65px;
+margin-left: -85px;
+}
+
+.airport-dropdown:hover {
+border-color: #007bff;
+}
+
+.airport-dropdown:focus {
+outline: none;
+border-color: #0056b3;
+}
+
+.airport-dropdown option {
+padding: 10px;
+font-size: 14px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+.airport-selector {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.airport-name {
+  font-size: 14px;
+}
+
+.airport-dropdown {
+  width: 100%;
+}
+}
+
+/* Alert Modal Styles */
+.alert-modal {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.alert-content {
+background-color: white;
+padding: 25px;
+border-radius: 8px;
+width: 400px;
+max-width: 90%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-buttons {
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+margin-top: 20px;
+}
+
+.alert-buttons button {
+background-color: #f5f5f5;
+color: #333;
+border: none;
+padding: 8px 15px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.alert-buttons button:first-child {
+background-color: #f5f5f5;
+color: #333;
+border: none;
+padding: 8px 15px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.alert-buttons button:last-child {
+background-color: #2e7d32;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.action-buttons {
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+/*sms*/
+.sms-text-box {
+padding: 10px;
+background-color: #f7f7f7;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+white-space: pre-wrap;
+}
+
+.sms-mobile-list {
+max-height: 200px;
+overflow-y: auto;
+background: #f0f0f0;
+padding: 10px;
+border: 1px solid #ccc;
+margin-bottom: 20px;
+}
